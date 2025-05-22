@@ -1,0 +1,9 @@
+from typing import List
+
+class Solution:
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        results = []
+        def recursive_dfs(indx, arr):
+            if len(arr) == k:
+                results.append(arr)
+                return

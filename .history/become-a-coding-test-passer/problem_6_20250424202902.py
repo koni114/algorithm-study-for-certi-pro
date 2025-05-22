@@ -1,0 +1,18 @@
+def solution(N, stages):
+    stages = sorted(stages)
+    answer = [0 for _ in range(N)]
+    
+    last_v = 0
+    people_n = len(stages)
+    for idx in range(people_n):
+        if idx >= 1 and stages[idx-1] != stages[idx]:
+            last_v = (idx - 1)
+            print(f"last_v-> {last_v}, stages[idx-1] -> {stages[idx-1]}")
+            answer[stages[idx-1] - 1] = (last_v + 1) / people_n
+    if last_v != N - 1:
+        answer[stages[last_v] - 1] = (last_v + 1) / people_n     
+    return answer
+
+N = 5 
+stages = [2, 1, 2, 6, 2, 4, 3, 3]
+solution(5, [2, 1, 2, 6, 2, 4, 3, 3])

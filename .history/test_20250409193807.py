@@ -1,0 +1,3 @@
+list_to_set = set([1, 2, 3, 3, 2])
+print(list_to_set)
+
