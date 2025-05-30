@@ -1,3 +1,9 @@
-from collections import deque
-test = deque([1, 2, 3])
-test.append(10)
+from itertools import combinations
+
+combinations(['a', 'b', 'c'], 2)
+
+
+round(1 / 2)
+
+a = 1
+int(a / 2 + 0.5)
