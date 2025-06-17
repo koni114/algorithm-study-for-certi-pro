@@ -1,9 +1,7 @@
-from itertools import combinations
+import math
 
-combinations(['a', 'b', 'c'], 2)
+math.floor(1.2)
+y_len = 4 
+x_len = 3
 
-
-round(1 / 2)
-
-a = 1
-int(a / 2 + 0.5)
+checked = [[False] * y_len for _ in range(x_len)]
